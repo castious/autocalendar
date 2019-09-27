@@ -1,2 +1,2 @@
 # autocalendar
-Utilities for exporting to gmail
+Utilities for exporting to gCalendar
