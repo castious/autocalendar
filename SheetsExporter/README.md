@@ -1,4 +1,5 @@
 Steps:
+
 0. Create a celendar if not done so
 1. Create a gsheet with the csv
 2. Insert your calendar ID from calendar settings (its a crystic long string)
