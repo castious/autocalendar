@@ -1,5 +1,5 @@
 # autocalendar
-Utilities for exporting to gCalendar.
+Utilities for exporting to gCalendar. You will first need to use one of the web crawlers (or use the provided csv in the folder) and then automate the calendar process through the SheetsExporter.
 
 Be aware this may lead to your calendar being unreadable! Create a new one to avoid this :)
 
