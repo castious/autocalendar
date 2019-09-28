@@ -10,12 +10,12 @@ function createCalendarEvent() {
     return;
   }
   var data = sheet.getRange(startRow, 1, numRows-1, numColumns).getValues(); // 1 indexed
-
+  
   var headers = sheet.getRange(startRow - 1, 1, startRow, numColumns).getValues()[0]; // 1 indexed
   var headerMap = {};
   for (var i = 0; i < headers.length; i++) {
        headerMap[headers[i]] = i;
-  }
+  }  
 
   var calendar = CalendarApp.getCalendarById(calendarId);
   for (var i = 0; i < data.length; i++) {
@@ -36,14 +36,20 @@ function createCalendarEvent() {
 
     if (isCompleted == "N") {
       var currentCell = sheet.getRange(startRow + i, 8);
-      var event = calendar.createEvent(name, startTime, endTime, {
-        description: description + '\n\n' + moreDetails,
-        location: place
-      });
-
-      Logger.log('Created Event ID: ' + event.getId());
-
-      currentCell.setValue("Y");
+      try {
+        var event = calendar.createEvent(name, startTime, endTime, {
+          description: description + '\n\n' + moreDetails,
+          location: place
+        });
+        
+        Logger.log('Created Event ID: ' + event.getId());
+        
+        currentCell.setValue("Y");
+      } catch(error) {
+        Logger.log('Being Throttled! Pausing for a bit' + event.getId());
+        Utilities.sleep(5000);
+        i--;
+      }
     }
   }
 }
