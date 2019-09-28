@@ -5,7 +5,7 @@ Steps:
 2. Insert your calendar ID from calendar settings
 
 <p align="center">
-  <img src="./img/FromCalendarPage.png" alt="Getting to calendar settings" width="650">
+  <img src="./img/FromCalendarPage.png" alt="Getting to calendar settings" width="150">
 </p>
 
 <p align="center">
