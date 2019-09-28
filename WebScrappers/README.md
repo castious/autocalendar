@@ -2,7 +2,12 @@ Scrapers here are designed to run against websites to create a CSV in the format
 
 <h2>Installation notes for GHC19.py</h2>
 
-Make sure you are looking at the screen with the location available! Screenshot attached with output csv.
+Make sure you are looking at the screen with the location available!
+
+<p align="center">
+  <img src="./img/GHC19.png" alt="Correct event page" width="650">
+</p>
+
 
 Required modules:
 
