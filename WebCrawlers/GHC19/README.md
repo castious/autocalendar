@@ -1,6 +1,6 @@
 <h2>Installation notes for GHC19.py</h2>
 
-Here you can just use the CSV for GHC19 or go through and scrape things yourself :) Make sure you are looking at the screen with the location available!
+Here you can just use the CSV for GHC19 or go through and crawl things yourself :) Make sure you are looking at the screen with the location available!
 
 <p align="center">
   <img src="./img/GHC19.png" alt="Correct event page" width="650">
